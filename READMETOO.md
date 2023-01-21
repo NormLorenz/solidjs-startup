@@ -6,3 +6,7 @@
 > npm install 
 
 ```
+
+- add solidjs logo
+- hook in router
+- hook in navigation
