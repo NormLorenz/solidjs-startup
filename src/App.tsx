@@ -8,12 +8,14 @@ const App: Component = () => {
           <article>
             <nav>
               <ul>
-                <li><strong>Solidjs App</strong></li>
+                <li><img src="/src/assets/solidjs.svg" alt="Solidjs" width="150px" height="80px" /></li>
+                <li><strong>Startup</strong></li>
               </ul>
               <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#" role="button" class="outline">Primary</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Counter</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" role="button" class="outline">Log Off</a></li>
               </ul>
             </nav>
           </article>
