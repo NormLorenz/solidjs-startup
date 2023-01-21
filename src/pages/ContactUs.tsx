@@ -1,0 +1,26 @@
+const ContactUs = () => {
+
+  return (
+    <article>
+      <hgroup>
+        <h2>Join Us</h2>
+        <h3>Litora torquent per conubia nostra</h3>
+      </hgroup>
+      <form>
+        <div class="grid">
+          <input type="text" name="firstname" placeholder="First name" aria-label="First name" required />
+          <input type="email" name="email" placeholder="Email address" aria-label="Email address" required />
+          <button type="submit">Subscribe</button>
+        </div>
+        <fieldset>
+          <label for="terms">
+            <input type="checkbox" role="switch" id="terms" name="terms" />
+            I agree to the <a href="#">Privacy Policy</a>
+          </label>
+        </fieldset>
+      </form>
+    </article>
+  )
+}
+
+export default ContactUs;
