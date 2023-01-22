@@ -2,7 +2,7 @@ const ContactUs = () => {
 
   return (
     <article>
-      <h2>Counter</h2>
+      <h2>Simple Counter</h2>
     </article>
   )
 }
