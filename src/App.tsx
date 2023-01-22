@@ -21,7 +21,7 @@ const App: Component = () => {
           <Routes />
         </section>
       </main>
-
+      
       <footer class="container">
         <section>
           <Footer />
