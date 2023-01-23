@@ -1,30 +1,34 @@
-import { createSignal } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 
 const Header = () => {
 
   const [theme, setTheme] = createSignal('dark');
 
-  // https://github.com/picocss/examples/tree/master/company/
+  onMount(async () => {
+    const theme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    setTheme(theme);
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+
+  const toggleTheme = (): void => {
+    setTheme(theme() === 'dark' ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme());
+    localStorage.setItem('theme', theme());
+  }
 
   return (
     <article>
       <nav>
         <ul>
-          <li><img src="/src/assets/solidjs.svg" alt="Solidjs" width="150px" height="80px" /></li>
+          <li><img src="/src/assets/solidjs.svg" alt="Solidjs" width="200px" height="80px" /></li>
         </ul>
         <ul>
           <li><a href="#/">Home</a></li>
           <li><a href="#/counter">Simple Counter</a></li>
           <li><a href="#/contactus">Contact Us</a></li>
           <li>
-            <details role="list">
-              <summary aria-haspopup="listbox" role="link" class="contrast" style="color: gray;">Theme</summary>
-              <ul role="listbox">
-                <li><a href="#" data-theme-switcher="auto">Auto</a></li>
-                <li><a href="#" data-theme-switcher="light">Light</a></li>
-                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
-              </ul>
-            </details>
+            <input type="checkbox" role="switch" id="theme" name="theme" onClick={() => { toggleTheme() }} />Toggle Theme
           </li>
         </ul>
       </nav>
