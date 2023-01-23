@@ -4,7 +4,7 @@ const ContactUs = () => {
     <article>
       <hgroup>
         <h2>Contact Us</h2>
-        <h3>Litora torquent per conubia nostra</h3>
+        <h3>Please reach out, we would like to hear from you!</h3>
       </hgroup>
       <form>
         <div class="grid">
