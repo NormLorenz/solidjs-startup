@@ -18,7 +18,7 @@ const ContactUs = () => {
         <fieldset>
           <label for="terms">
             <input type="checkbox" role="switch" id="terms" name="terms" />
-            I agree to the <a href="#">Privacy Policy</a>
+            I agree to the <a href="#/contactus">Privacy Policy</a>
           </label>
         </fieldset>
       </form>
