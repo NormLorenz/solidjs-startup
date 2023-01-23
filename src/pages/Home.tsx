@@ -3,6 +3,7 @@ import { createResource, createSignal, Show } from 'solid-js';
 const Home = () => {
 
   const [keyword, setKeyword] = createSignal('');
+  
   const [castList] = createResource(keyword, async () => {
     return fetch('./config.json')
       .then(res => res.json())
