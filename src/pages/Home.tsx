@@ -14,7 +14,10 @@ const Home = () => {
 
   return (
     <article>
-      <h2>Home - Find Stargazers</h2>
+      <hgroup>
+        <h2>Home</h2>
+        <h3>Search for Stargazers</h3>
+      </hgroup>
       <div class="grid">
         <div>
           <input onKeyUp={(e) => setKeyword(e.currentTarget.value)} placeholder="Enter search criteria" type="text" />
@@ -22,7 +25,7 @@ const Home = () => {
         <div></div>
         <div></div>
       </div>
-      <Show when={keyword()} fallback={<p>Castmembers await being discovered</p>}>
+      <Show when={keyword()} fallback={<p>Cast members await being discovered</p>}>
         {JSON.stringify(castList())}
       </Show>
     </article>
