@@ -22,14 +22,33 @@
 
 ## HOW DID I GET HERE (PART TWO)
 - I read an article by Mike Pearson 'I changed my mind. Angular needs a reactive primitive'. This is a very good article and should challenge what we know and how we use Angular.
-- A developer, Ryan Carniato is referenced multiple time in the article on his approach to reactivitiy. By the way, Ryan Carniato is the creator of Solidjs.
+- A developer, Ryan Carniato is referenced multiple time in the article and his approach to reactivitiy. By the way, Ryan Carniato is the creator of Solidjs.
 - So why not Solidjs?
 
 ## WHY IS SOLID.JS FRAMEWORK BETTER
+- Like React and uses JSX but doesn't use a shadow DOM
+- Fine grain reactivity
+- Built-in reactive primitives
+- Really fast - almost as fast as native javascript
+- Small size
+- Coding is fun again
+- Isophosmeric deployments
+- 
 
 ## DEMO
+
+### Some fragments
+```javascript
+const Footer = () => {
+  return (
+    <article>
+      <span>Copyright © 2022 Water Street Works</span>
+    </article>
+  )
+}
+export default Footer;
+```
 
 ## REFERENCES
 
 ## QUESTIONS
-
