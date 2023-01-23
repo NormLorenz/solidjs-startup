@@ -6,8 +6,7 @@ import './index.css';
 import App from './App';
 
 render(() => (
-  <Router source={hashIntegration()}>
-    <App />
-  </Router>
+    <Router source={hashIntegration()}>
+      <App />
+    </Router>
 ), document.getElementById('root') as HTMLElement);
-
