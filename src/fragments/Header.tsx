@@ -1,11 +1,11 @@
-import { createSignal, onMount } from "solid-js";
+import { createSignal, onMount } from 'solid-js';
 
 const Header = () => {
 
   const [theme, setTheme] = createSignal('dark');
 
   onMount(async () => {
-    const theme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     setTheme(theme);
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
