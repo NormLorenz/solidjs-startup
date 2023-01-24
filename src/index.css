@@ -1,6 +1,5 @@
 /* Global CSS variables */
 :root {
-  /* --spacing-company: 3rem; */
   --font-weight: 400;
   --border-radius: 0;
 }
@@ -8,8 +7,34 @@
 /* Typography */
 h2,
 h3,
-hgroup > :last-child {
+hgroup> :last-child {
   font-weight: 200;
+}
+
+/* Theme button */
+.theme-button {
+  border-radius: 25px;
+  padding: 0px;
+  width: 140px;
+  height: 45px;
+}
+
+/* Counter button */
+.counter-button {
+  border-radius: 25px;
+  padding: 0px;
+  width: 140px;
+  height: 45px;
+}
+
+/* Counter number */
+.counter-number {
+  font-weight: 200;
+  font-size: 96px;
+  color:lightslategray;
+  border-radius: 25px;
+  border: 2px solid lightslategray;
+  text-align: center;
 }
 
 /* small {
