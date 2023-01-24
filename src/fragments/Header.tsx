@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   const toggleLabel = (): string => {
-    return theme() === 'dark' ? 'Light Theme' : 'Dark Theme';
+    return theme() === 'dark' ? 'Light Mode' : 'Dark Mode';
   }
 
   return (
@@ -32,7 +32,7 @@ const Header = () => {
           <li><a href="#/counter">Simple Counter</a></li>
           <li><a href="#/contactus">Contact Us</a></li>
           <li>
-            <input type="checkbox" role="switch" id="theme" name="theme" onClick={() => { toggleTheme() }} />{toggleLabel()}
+            <button class="outline theme-button" onClick={() => { toggleTheme() }} type="submit">{toggleLabel()}</button>
           </li>
         </ul>
       </nav>
