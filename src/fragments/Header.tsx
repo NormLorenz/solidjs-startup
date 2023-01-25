@@ -1,4 +1,5 @@
 import { createSignal, onMount } from 'solid-js';
+import AlertIndicator from './AlertIndicator';
 
 const Header = () => {
 
@@ -26,6 +27,7 @@ const Header = () => {
       <nav>
         <ul>
           <li><img src="/src/assets/solidjs.svg" alt="Solidjs" width="200px" height="80px" /></li>
+          <AlertIndicator />
         </ul>
         <ul>
           <li><a href="#/">Home</a></li>
