@@ -31,10 +31,40 @@ hgroup> :last-child {
 .counter-number {
   font-weight: 200;
   font-size: 96px;
-  color:lightslategray;
+  color: lightslategray;
   border-radius: 25px;
   border: 2px solid lightslategray;
   text-align: center;
+}
+
+/* Alert Indicator*/
+.blob {
+  background: red;
+  border-radius: 50%;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+
+  box-shadow: 0 0 0 0 rgb(228, 109, 109);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(209, 10, 27, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 /* small {
