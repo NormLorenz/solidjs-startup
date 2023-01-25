@@ -37,16 +37,42 @@
 
 ## DEMO
 
-### Some fragments
+### Some new fragments
+- Alert State
 ```javascript
-const Footer = () => {
+import { createSignal, createRoot } from "solid-js";
+
+const alertState = () => {
+  const [alert, setAlert] = createSignal(false);
+  return { alert, setAlert };
+}
+
+export default createRoot(alertState);
+```
+
+- Alert Button
+```javascript
+const AlertButton = () => {
+
   return (
-    <article>
-      <span>Copyright © 2022 Water Street Works</span>
-    </article>
+    <>
+    </>
   )
 }
-export default Footer;
+
+export default AlertButton;
+```
+
+- Alert Indicator
+```javascript
+const AlertIndicator = () => {
+
+  return (
+    <div class="blob"></div>
+  )
+}
+
+export default AlertIndicator;
 ```
 
 ## REFERENCES
