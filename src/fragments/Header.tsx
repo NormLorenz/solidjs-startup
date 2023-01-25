@@ -31,6 +31,7 @@ const Header = () => {
           <li><a href="#/">Home</a></li>
           <li><a href="#/counter">Simple Counter</a></li>
           <li><a href="#/contactus">Contact Us</a></li>
+          <li><a href="#/about">About</a></li>
           <li>
             <button class="outline theme-button" onClick={() => { toggleTheme() }} type="submit">{toggleLabel()}</button>
           </li>
