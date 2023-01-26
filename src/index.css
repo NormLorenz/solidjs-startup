@@ -33,12 +33,17 @@ hgroup> :last-child {
   font-size: 96px;
   color: lightslategray;
   border-radius: 25px;
-  border: 2px solid lightslategray;
+  border: 1px solid lightslategray;
   text-align: center;
 }
 
 /* Alert Toggle */
-
+.alert-toggle {
+  border-radius: 25px;
+  padding: 0px;
+  width: 160px;
+  height: 45px;
+}
 
 /* Alert Indicator*/
 .alert-indicator {
@@ -68,4 +73,14 @@ hgroup> :last-child {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+}
+
+article {
+  padding: 50px;
+  margin: 0px;
+}
+
+section {
+  padding: 20px;
+  margin: 0px;
 }
