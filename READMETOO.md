@@ -7,3 +7,4 @@
 
 - hook in router
 - hook in navigation
+- build a reasonable looking config.json
