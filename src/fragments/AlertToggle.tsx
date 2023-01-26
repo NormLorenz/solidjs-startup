@@ -1,11 +1,11 @@
-import alertState from './alert.state';
+import alertState from '../state/alert.state';
 
 const AlertToggle = () => {
 
   const { alert, setAlert } = alertState;
 
   return (
-    <button class="outline" onClick={() => setAlert(!alert())}>Toggle Alert</button>
+    <button class="outline alert-toggle" onClick={() => setAlert(!alert())}>Toggle Alert</button>
   )
 }
 
