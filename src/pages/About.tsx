@@ -1,3 +1,5 @@
+import AlertToggle from "../fragments/AlertToggle";
+
 const About = () => {
   return (
     <article>
@@ -11,6 +13,9 @@ const About = () => {
         nodes and updates them with <strong>fine-grained</strong> reactions. Declare your state
         and use it throughout your app, and when a piece of state changes, only
         the code that depends on it will rerun.
+      </p>
+      <p>
+        <AlertToggle />
       </p>
     </article>
   )
