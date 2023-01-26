@@ -38,7 +38,7 @@
 ## DEMO
 
 ### Some new fragments
-- Alert State
+Alert State
 ```javascript
 import { createSignal, createRoot } from "solid-js";
 
@@ -50,7 +50,7 @@ const alertState = () => {
 export default createRoot(alertState);
 ```
 
-- Alert Button
+Alert Button
 ```javascript
 const AlertButton = () => {
 
@@ -63,12 +63,20 @@ const AlertButton = () => {
 export default AlertButton;
 ```
 
-- Alert Indicator
+Alert Indicator
 ```javascript
+import { Show } from 'solid-js';
+
+import alertState from './alertState';
+
 const AlertIndicator = () => {
 
+  const { alert, setAlert } = alertState;
+
   return (
-    <div class="blob"></div>
+    <Show when={alert()} fallback={<div></div>}>
+      <div class="blob"></div>
+    </Show>
   )
 }
 

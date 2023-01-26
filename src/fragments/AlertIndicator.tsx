@@ -1,14 +1,14 @@
 import { Show } from 'solid-js';
 
-import alertState from './alertState';
+import alertState from './alert.state';
 
 const AlertIndicator = () => {
 
-  const { alert, setAlert } = alertState;
+  const { alert } = alertState;
 
   return (
     <Show when={alert()} fallback={<div></div>}>
-      <div class="blob"></div>
+      <div class="alert-indicator"></div>
     </Show>
   )
 }

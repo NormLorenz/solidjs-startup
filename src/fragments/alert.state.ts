@@ -1,7 +1,7 @@
 import { createSignal, createRoot } from 'solid-js';
 
 const alertState = () => {
-  const [alert, setAlert] = createSignal(true);
+  const [alert, setAlert] = createSignal(false);
   return { alert, setAlert };
 }
 
