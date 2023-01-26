@@ -1,6 +1,6 @@
 import { Show } from 'solid-js';
 
-import alertState from './alert.state';
+import alertState from '../state/alert.state';
 
 const AlertIndicator = () => {
 
