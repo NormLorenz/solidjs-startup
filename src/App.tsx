@@ -8,6 +8,16 @@ import { routes } from './routes';
 const Routes = useRoutes(routes);
 
 const App: Component = () => {
+
+  console.log('base url:', import.meta.env.BASE_URL);
+  console.log('is production:', import.meta.env.PROD);
+  console.log('is development:', import.meta.env.DEV);
+  console.log('is server side rendering:', import.meta.env.SSR);
+  console.log('mode:', import.meta.env.MODE);
+  console.log('some key:', import.meta.env.VITE_SOME_KEY);
+  console.log('some uri:', import.meta.env.VITE_SOME_URI);
+  console.log('some secret:', import.meta.env.VITE_SOME_SECRET);
+
   return (
     <>
       <header class="container">
@@ -21,7 +31,7 @@ const App: Component = () => {
           <Routes />
         </section>
       </main>
-      
+
       <footer class="container">
         <section>
           <Footer />
