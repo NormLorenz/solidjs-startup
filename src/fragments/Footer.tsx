@@ -4,8 +4,10 @@ const Footer = () => {
 
   return (
     <article>
-      <span>Copyright © 2022 Water Street Works</span>
-      <AlertToggle />
+      <div class="grid">
+        <div>Copyright © 2022 Water Street Works</div>
+        <div><AlertToggle /></div>
+      </div>
     </article>
   )
 }
