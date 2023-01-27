@@ -1,23 +1,30 @@
 import { createResource, createSignal, Show } from 'solid-js';
 
+// build a type
+// type animal = {
+//  name: string;
+//  legs: number;
+//  
+//}
+
 const Home = () => {
 
   const [keyword, setKeyword] = createSignal('');
   
   const [castList] = createResource(keyword, async () => {
-    return fetch('./config.json')
+    return fetch('./animals.json')
       .then(res => res.json())
-      // .then(data => data.filter(
-      //   (item: { name: string; }) => item.name.toLowerCase()
-      //     .match(keyword().toLowerCase())
-      // ))
+      .then(data => data.filter(
+        (item: { name: string; }) => item.name.toLowerCase()
+          .match(keyword().toLowerCase())
+      ))
   });
 
   return (
     <article>
       <hgroup>
         <h2>Home</h2>
-        <h3>Read the config.json File</h3>
+        <h3>Search the animals.json file</h3>
       </hgroup>
       <div class="grid">
         <div>
@@ -26,7 +33,7 @@ const Home = () => {
         <div></div>
         <div></div>
       </div>
-      <Show when={keyword()} fallback={<p>Waiting for you to press the button</p>}>
+      <Show when={keyword()} fallback={<p>Waiting for you to type something</p>}>
         {JSON.stringify(castList())}
       </Show>
     </article>

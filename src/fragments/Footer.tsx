@@ -1,13 +1,12 @@
-import AlertToggle from "./AlertToggle";
-
 const Footer = () => {
 
   return (
     <article>
-      <div class="grid">
-        <div>Copyright © 2022 Water Street Works</div>
-        <div><AlertToggle /></div>
-      </div>
+      <p>Copyright © 2022 Water Street Works</p>
+      <p>
+        <small>Environment: {import.meta.env.MODE}</small><br />
+        <small>Version: {import.meta.env.VITE_VERSION}</small>
+      </p>
     </article>
   )
 }

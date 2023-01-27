@@ -4,10 +4,6 @@ const ContactUs = () => {
 
   const [count, setCount] = createSignal(0);
 
-  const increment = () => setCount(count() + 1);
-  const decrement = () => setCount(count() - 1);
-  const clear = () => setCount(0);
-
   return (
     <article>
       <hgroup>
@@ -16,9 +12,9 @@ const ContactUs = () => {
       </hgroup>
       <div class="grid">
         <div>
-          <button class="outline counter-button" onClick={() => increment()}>Increment</button>
-          <button class="outline counter-button" onClick={() => decrement()}>Decrement</button>
-          <button class="outline counter-button" onClick={() => clear()}>Clear</button>
+          <button class="outline counter-button" onClick={() => setCount(count() + 1)}>Increment</button>
+          <button class="outline counter-button" onClick={() => setCount(count() - 1)}>Decrement</button>
+          <button class="outline counter-button" onClick={() => setCount(0)}>Clear</button>
         </div>
         <div></div>
         <div class="counter-number">{count()}</div>
