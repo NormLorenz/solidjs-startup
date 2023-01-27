@@ -24,7 +24,7 @@
 > npm run build
 ```
 
-## environment files
+## Environment Files
 ```cmd
 .env
 .env.production
