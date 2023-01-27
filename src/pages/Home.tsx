@@ -4,18 +4,17 @@ import { createResource, createSignal, Show } from 'solid-js';
 // type animal = {
 //  name: string;
 //  legs: number;
-//  
 //}
 
 const Home = () => {
 
   const [keyword, setKeyword] = createSignal('');
-  
+
   const [castList] = createResource(keyword, async () => {
     return fetch('./animals.json')
       .then(res => res.json())
       .then(data => data.filter(
-        (item: { name: string; }) => item.name.toLowerCase()
+        (item: { commonName: string; }) => item.commonName.toLowerCase()
           .match(keyword().toLowerCase())
       ))
   });
@@ -24,7 +23,7 @@ const Home = () => {
     <article>
       <hgroup>
         <h2>Home</h2>
-        <h3>Search the animals.json file</h3>
+        <h3>Search the animals.json file by common name</h3>
       </hgroup>
       <div class="grid">
         <div>
