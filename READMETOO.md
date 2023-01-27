@@ -1,27 +1,33 @@
-# README TOO
+# READ ME TOO
 
-## install router and pico
+## This solidjs repo with typescript is built to demonstrate the following:
+- using solidjs routing
+- using minimalist pico css
+- fetching a json file in the public folder
+- pulling environmental information from .env files
+- setting application state on startup
+- toggling light/dark theme
+- explain folder structure
+
+## Install
 ```bash
-> npm install @solidjs/router
+# install libraries
+> npm install
 ```
 
-- hook in router
-- hook in navigation
-- build a reasonable looking animals.json
-- rename config.json to animals.json
-- build a animals.json and include a type or interface for that data
-- 
+## Build
+```bash
+# build development
+> npm start
 
-explain the .env and .env.production files and how to build for production
+# build production bits
+> npm run build
+```
 
- console.log('base url:', import.meta.env.BASE_URL);
-  console.log('is production:', import.meta.env.PROD);
-  console.log('is development:', import.meta.env.DEV);
-  console.log('is server side rendering:', import.meta.env.SSR);
-  console.log('some key:', import.meta.env.VITE_SOME_KEY);
-  console.log('some uri:', import.meta.env.VITE_SOME_URI);
-  console.log('some secret:', import.meta.env.VITE_SOME_SECRET);
-  console.log('mode:', import.meta.env.MODE);
-  console.log('version:', import.meta.env.VITE_VERSION);
-
-
+## environment files
+```cmd
+.env
+.env.production
+```
+The .env file is for the local environment while .env.production is for the production environment. Look at the Footer.tsx file to see how these might be consumed. Also click [here](https://vitejs.dev/guide/env-and-mode.html) to better understand their usage, 
+  
