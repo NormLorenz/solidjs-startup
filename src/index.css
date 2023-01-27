@@ -75,11 +75,13 @@ hgroup> :last-child {
   }
 }
 
+/* Article */
 article {
   padding: 50px;
   margin: 0px;
 }
 
+/* Section */
 section {
   padding: 20px;
   margin: 0px;
