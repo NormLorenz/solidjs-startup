@@ -8,7 +8,7 @@
 - setting application state on startup
 - toggling light/dark theme
 - explain folder structure
-- pulling from local store
+- pulling from local (browser) store
 
 
 ## Install
