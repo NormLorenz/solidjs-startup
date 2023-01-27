@@ -1,10 +1,16 @@
 import { createResource, createSignal, Show } from 'solid-js';
 
-// build a type
-// type animal = {
-//  name: string;
-//  legs: number;
-//}
+// animal type
+type animal = {
+  id: number;
+  commonName: string;
+  scientificName: string;
+  type: string;
+  diet: string;
+  groupName: string;
+  lifeSpan: string;
+  description: string;
+}
 
 const Home = () => {
 
