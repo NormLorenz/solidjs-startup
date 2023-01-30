@@ -1,27 +1,30 @@
 # PRESENTATION
 
+> An introduction to Solidjs and why its the best thing since sliced bread. After we go through this, you might wonder why your daily programming activities are not fun anymore, why you need to think about declarative programming and why reactivity is so important. You might also wonder what's the hype about component and modules. Isn't there just a simpler way?
+
 ## OUTLINE
-- How did I get here
 - What problems are we trying to solve
-- How did I get here (part two)
+- How did I get here
 - Why is the Solid.js framework better
 - Demo
 - References
 - Questions
 
-## HOW DID I GET HERE
-- Building a reactive application in Angular is just too complicated.
-- You must know in part NgRx, RxJs, immutable objects, modules, directives, actions, reducers, selectors and effects.
-- You must deal with tons of boilerplate.
-- Unit testing is a nightmare because of dependancy injection.
-- You must have a good understand about state and the differences between local storage, remote storage, page state and application state.
-- Maybe we don’t need NgRx at all, maybe there are alternative packages like NGXS, Akita or StateAdapt.
-- Actually why are we using packages at all, why isn’t reactivity baked in?
-
 ## WHAT PROBLEMS ARE WE TRYING TO SOLVE
+- Building a reactive application in Angular is just too complicated.
+- You must know in part NgRx, RxJs, immutable objects, actions, reducers, selectors and effects.
+- You must deal with tons of boilerplate.
+- You must wonder about events firing mulitple times and refreshing large parts of the DOM.
+- You must understand how to create and dispose of observables.
+- You must understand how to consume application state from one place to another.
+- You may wonder why unit tests are such a nighmare.
+- You may wonder if we don’t need NgRx at all and are there just simpler alternatives.
+- You may wonder why reactivity isn't baked in to the application framework?
 
-## HOW DID I GET HERE (PART TWO)
-- I read an article by Mike Pearson 'I changed my mind. Angular needs a reactive primitive'. This is a very good article and should challenge what we know and how we use Angular.
+## HOW DID I GET HERE
+- I read an article by Mike Pearson called '**I changed my mind. Angular needs a reactive primitive**'. This is the best article I've read in a long time and it challenges what we know and how we use Angular.
+- It blah
+- and it blah
 - A developer, Ryan Carniato is referenced multiple time in the article and his approach to reactivitiy. By the way, Ryan Carniato is the creator of Solidjs.
 - So why not Solidjs?
 
@@ -33,7 +36,7 @@
 - Small size
 - Coding is fun again
 - Isophosmeric deployments
-- 
+- Almost nothing to learn
 
 ## DEMO
 
