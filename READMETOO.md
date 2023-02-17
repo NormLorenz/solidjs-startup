@@ -2,7 +2,7 @@
 
 ## This solidjs repo with typescript is built to demonstrate the following:
 - using solidjs routing
-- using minimalist pico css
+- using minimalist pico css https://www.youtube.com/watch?v=JPzC_sbBfyY
 - fetching a json file in the public folder
 - pulling environmental information from .env files
 - setting application state on startup
