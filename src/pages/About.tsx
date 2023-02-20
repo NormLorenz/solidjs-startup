@@ -4,7 +4,7 @@ const About = () => {
   return (
     <article>
       <hgroup>
-        <h2>About</h2>
+        <h2>About Page</h2>
         <h3>All about Solidjs</h3>
       </hgroup>
       <details open>

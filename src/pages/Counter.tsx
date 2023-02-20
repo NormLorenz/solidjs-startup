@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <article>
       <hgroup>
-        <h2>Simple Counter</h2>
+        <h2>Counter Page</h2>
         <h3>Work with a counter</h3>
       </hgroup>
       <div class="grid">

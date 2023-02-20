@@ -3,7 +3,7 @@ const ContactUs = () => {
   return (
     <article>
       <hgroup>
-        <h2>Contact Us</h2>
+        <h2>Contact Us Page</h2>
         <h3>Please reach out, we would like to hear from you!</h3>
       </hgroup>
       <form>

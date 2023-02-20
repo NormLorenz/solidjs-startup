@@ -31,10 +31,18 @@ const Header = () => {
         </ul>
         <ul>
           <li><a href="#/">Home</a></li>
-          <li><a href="#/counter">Simple Counter</a></li>
+          <li><a href="#/counter">Counter</a></li>
           <li><a href="#/contactus">Contact Us</a></li>
-          <li><a href="#/chart">Chart</a></li>
           <li><a href="#/about">About</a></li>
+          <li>
+            <details role="list">
+              <summary class="outline" role="button">More</summary>
+              <ul role="listbox">
+                <li><a href="#/chart">Chart</a></li>
+                <li><a href="#/tasks">Tasks</a></li>
+              </ul>
+            </details>
+          </li>
           <li>
             <button class="outline theme-button" onClick={() => { toggleTheme() }} type="submit">{toggleLabel()}</button>
           </li>

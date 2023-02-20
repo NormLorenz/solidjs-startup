@@ -40,7 +40,7 @@ const Chart = () => {
   return (
     <article>
       <hgroup>
-        <h2>Simple Chart</h2>
+        <h2>Chart Page</h2>
         <h3>Work with a chart</h3>
       </hgroup>
       <div>

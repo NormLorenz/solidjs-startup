@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <article>
       <hgroup>
-        <h2>Home</h2>
+        <h2>Home Page</h2>
         <h3>Search the animals.json file by common name</h3>
       </hgroup>
       <div class="grid">
