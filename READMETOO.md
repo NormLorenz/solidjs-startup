@@ -9,7 +9,7 @@
 - toggling light/dark theme
 - explain folder structure
 - pulling from local (browser) store
-
+- lazy loading pages
 
 ## Install
 ```bash
