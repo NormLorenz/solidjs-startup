@@ -16,38 +16,20 @@ const BookShelf = () => {
 
   return (
     <article>
-       <hgroup>
+      <hgroup>
         <h2>Bookshelf Page</h2>
         <h3>My books ({books().length})</h3>
       </hgroup>
 
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+      <div>
+        <BookList books={books()} />
 
-          <BookList books={books()} />
-
-          <div class="container">
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-10">
-
-                <Show when={showForm()} fallback={
-                  <div class="p-3">
-                    <button class="btn btn-outline-primary" type="button" onClick={toggleForm}>Add a book</button>
-                  </div>
-                }>
-                  <AddBook setBooks={setBooks} />
-                  <div class="p-3">
-                    <button class="btn btn-outline-primary " type="button" onClick={toggleForm}>Finished adding books</button>
-                  </div>
-                </Show>
-              </div>
-              <div class="col-1"></div>
-            </div>
-          </div>
-
-        </div>
+        <Show when={showForm()} fallback={
+          <button class="outline" onClick={toggleForm}>Add a book</button>
+        }>
+          <AddBook setBooks={setBooks} />
+          <button class="outline" onClick={toggleForm}>Finished adding books</button>
+        </Show>
       </div>
 
     </article >
