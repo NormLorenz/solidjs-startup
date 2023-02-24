@@ -15,13 +15,11 @@ const BookShelf = () => {
   const toggleForm = () => setShowForm(!showForm());
 
   return (
-    <div class="container">
-
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <h1>Solid's Bookshelf</h1>
-        </div>
-      </div>
+    <article>
+       <hgroup>
+        <h2>Bookshelf Page</h2>
+        <h3>My books ({books().length})</h3>
+      </hgroup>
 
       <div class="row">
         <div class="col-2"></div>
@@ -50,10 +48,9 @@ const BookShelf = () => {
           </div>
 
         </div>
-        <div class="col-2"></div>
       </div>
 
-    </div >
+    </article >
   );
 }
 
