@@ -36,14 +36,13 @@ const Tasks = () => {
         <h3>Add, delete and toggle completed status</h3>
       </hgroup>
 
-      <form>
+      <form onSubmit={() => addTask()}>
         <div class="grid">
           <div>
             <input type="text" onChange={(e) => setName(e.currentTarget.value)} placeholder="A task name" value={name()} />
           </div>
-          <div>
-            <button class="outline alert-toggle" onClick={() => addTask()}>Add</button>
-          </div>
+          <div></div>
+          <div></div>
           <div></div>
         </div>
       </form>
