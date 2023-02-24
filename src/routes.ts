@@ -17,6 +17,10 @@ export const routes: RouteDefinition[] = [
     component: lazy(() => import('./pages/Counter')),
   },
   {
+    path: '/bookshelf',
+    component: lazy(() => import('./pages/Bookshelf')),
+  },
+  {
     path: '/chart',
     component: lazy(() => import('./pages/Chart')),
   },
