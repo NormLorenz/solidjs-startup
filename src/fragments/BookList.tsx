@@ -8,16 +8,13 @@ interface BookListProps {
 
 export const BookList = (props: BookListProps) => {
 
-  const totalBooks = () => props.books.length;
-
   return (
     <>
-      <h3>My books ({totalBooks()})</h3>
-      <ul class="list-group">
+      <ul>
         <For each={props.books}>
           {(book) => {
             return (
-              <li class="list-group-item">
+              <li>
                 {book.title} <span style={{ "font-style": "italic" }}> ({book.author})</span>
               </li>
             );
