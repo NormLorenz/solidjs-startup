@@ -22,21 +22,6 @@ export const AddBook = (props: AddBookProps) => {
           <div class="col-lg-6">
             <div class="form-group mt-2">
               <div class="validation-container">
-                <input type="email" class="form-control" placeholder="Your email*" name="email" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group mt-2">
-              <input type="text" class="form-control" placeholder="Your phone (optional)" name="phone" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="form-group mt-2">
-              <div class="validation-container">
                 <input type="text" class="form-control" placeholder="Search books*" name="title" value={input()}
                   onInput={(e) => { setInput(e.currentTarget.value); }} />
               </div>
