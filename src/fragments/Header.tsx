@@ -38,6 +38,7 @@ const Header = () => {
             <details role="list">
               <summary class="outline" role="button">More</summary>
               <ul role="listbox">
+                <li><a href="#/bookshelf">Bookshelf</a></li>
                 <li><a href="#/chart">Chart</a></li>
                 <li><a href="#/tasks">Tasks</a></li>
               </ul>
