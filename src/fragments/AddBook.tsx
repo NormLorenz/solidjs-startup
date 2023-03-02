@@ -29,7 +29,7 @@ export const AddBook = (props: AddBookProps) => {
             {(book) => (
               <li>
                 {book.title} by {book.author}{" "}
-                <img src="/src/assets/plus.svg" onclick={(e) => {props.setBooks((books) => [...books, book]); }} alt="Add" width="24" height="24" />
+                <img src="/src/assets/plus.svg" onclick={(e) => { props.setBooks((books) => [...books, book]); }} alt="Add" width="24" height="24" />
               </li>
             )}
           </For>
