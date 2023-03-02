@@ -12,58 +12,29 @@ export const AddBook = (props: AddBookProps) => {
   const [input, setInput] = createSignal('');
   const [query, setQuery] = createSignal('');
 
+  // add a minus to listbooks to remove an existing book
+
   const [data] = createResource<Book[], string>(query, bookShelfService);
 
   return (
-    <div class="container">
+    <>
       <form>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="form-group mt-2">
-              <div class="validation-container">
-                <input type="text" class="form-control" placeholder="Search books*" name="title" value={input()}
-                  onInput={(e) => { setInput(e.currentTarget.value); }} />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-group mt-2">
-              <button class="btn btn-outline-primary" type="submit" onClick={(e) => { e.preventDefault(); setQuery(input()); }}>Search</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="form-group mt-2"></div>
-          </div>
-        </div>
-
+        <input type="text" placeholder="Search books*" name="title" value={input()} onInput={(e) => { setInput(e.currentTarget.value); }} />
+        <button class="outline" type="submit" onClick={(e) => { e.preventDefault(); setQuery(input()); }}>Search</button>
       </form>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-group mt-2">
-            <Show when={!data.loading} fallback={<>Searching...</>}>
-              <ul class="list-group">
-                <For each={data()}>
-                  {(book) => (
-                    <li class="list-group-item">
-                      {book.title} by {book.author}{" "}
-                      <button type="button" class="btn btn-outline-primary" aria-label={`Add ${book.title} by ${book.author} to the bookshelf`}
-                        onClick={(e) => { e.preventDefault(); props.setBooks((books) => [...books, book]); }}>
-                        Add
-                      </button>
-                    </li>
-                  )}
-                </For>
-              </ul>
-            </Show>
-          </div>
-        </div>
-      </div>
-
-    </div>
+      <Show when={!data.loading} fallback={<>Searching...</>}>
+        <ul>
+          <For each={data()}>
+            {(book) => (
+              <li>
+                {book.title} by {book.author}{" "}
+                <img src="/src/assets/plus.svg" onclick={(e) => {props.setBooks((books) => [...books, book]); }} alt="Add" width="24" height="24" />
+              </li>
+            )}
+          </For>
+        </ul>
+      </Show>
+    </>
   )
 }
