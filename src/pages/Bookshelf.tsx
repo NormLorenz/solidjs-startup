@@ -22,7 +22,7 @@ const BookShelf = () => {
       </hgroup>
 
       <div>
-        <BookList books={books()} />
+        <BookList setBooks={setBooks} books={books()} />
 
         <Show when={showForm()} fallback={
           <button class="outline" onClick={toggleForm}>Add a book</button>
