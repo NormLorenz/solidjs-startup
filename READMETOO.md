@@ -17,13 +17,18 @@
 > npm install
 ```
 
-## Build
+## Build and Run
 ```bash
 # build development
 > npm start
 
-# build production bits
+## build production bits
 > npm run build
+```
+
+## Stop
+```bash
+> q
 ```
 
 ## Environment Files
