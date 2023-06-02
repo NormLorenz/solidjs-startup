@@ -22,7 +22,7 @@
 # build development
 > npm start
 
-## build production bits
+# build production bits
 > npm run build
 ```
 
