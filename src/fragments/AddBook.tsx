@@ -1,6 +1,6 @@
 import { createSignal, Setter, createResource, For, Show } from "solid-js";
 
-import { Book } from "../models/Bookshelf.model";
+import { Book } from "../models/bookShelf.model";
 import { bookShelfService } from '../services/bookShelf.service';
 
 interface AddBookProps {
